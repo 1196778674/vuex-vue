@@ -7,7 +7,12 @@ import * as types from '../../views/Index/types'
 
 export default {
   state: {
-    indexState: 'Default State'
+    todo: {
+      name: '',
+      email: '',
+      password: '',
+      tel: ''
+    }
   },
   getters: {
     [types.GETTER_STATE] (state) {

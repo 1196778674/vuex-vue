@@ -1,6 +1,10 @@
 <template>
   <div id="index">
-    {{title}}
+    <mt-field label="用户名" placeholder="请输入用户名" type="text" v-model="todo.name"></mt-field>
+    <mt-field label="邮箱" placeholder="请输入邮箱" type="email" v-model="todo.email"></mt-field>
+    <mt-field label="密码" placeholder="请输入密码" type="password" v-model="todo.password"></mt-field>
+    <mt-field label="手机号" placeholder="请输入手机号" type="tel" v-model="todo.tel"></mt-field>
+    <mt-button size="large" type="primary">提交</mt-button>
   </div>
 </template>
 <script>
@@ -19,20 +23,20 @@
     },
     data () {
       return {
-        title: '主页'
+        todo: this.$store.state.index.todo
       }
     },
     computed: {
       // 计算属性
       ...mapState([
-        'defaultState'
+        'todo'
       ]),
 
       defaultState () {
-        return this.$store.state.index.indexState
+        return this.$store.state.index.todo
       },
       ...mapGetters({
-        defaultState: types.GETTER_STATE
+        todo: types.GETTER_STATE
       })
     },
     methods: {
