@@ -1,5 +1,5 @@
 /**
- * Created by liuqi453 on 10/12/16.
+ * Created by liufei.
  */
 
 import createLogger from 'vuex/dist/logger'

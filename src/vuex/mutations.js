@@ -1,5 +1,5 @@
 /**
- * Created by liuqi453 on 10/18/16.
+ * Created by liufei.
  */
 
 const SYNC_MUTATION = (state) => {
