@@ -14,7 +14,7 @@
 			<div class="collapse navbar-collapse navbar-ex1-collapse">
 				<ul class="nav navbar-nav">
 					<li v-for="(item, key) in $store.state.nav_list">
-						<a href="#">{{ item.name }} {{ key + 1 }}</a>
+						<a href='{path: "/list"+item.id}'>{{ item.name }} {{ key + 1 }}</a>
 					</li>
 				</ul>
 
