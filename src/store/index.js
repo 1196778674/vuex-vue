@@ -7,14 +7,15 @@ import getters from './getters'
 
 Vue.use(Vuex)
 
-// root state object.
-// each Vuex instance is just a single state tree.
+// 定义state初始值
 const state = {
-  count: 0
+  title: 'vuex',
+  user_name: '一坨小灰灰',
+  nav_list: [{id: 1, name: '列表'}, {id: 2, name: '列表'}],
+  nav_down: [{id: 1, name: '设置'}, {id: 2, name: '个人中心'}, {id: 3, name: '退出'}]
 }
 
-// A Vuex instance is created by combining the state, mutations, actions,
-// and getters.
+// vuex定义的actions,mutations,getters,state的处理方法
 export default new Vuex.Store({
   state,
   getters,
