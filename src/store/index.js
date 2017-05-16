@@ -9,6 +9,7 @@ Vue.use(Vuex)
 
 // 定义state初始值
 const state = {
+  show_header: true,
   title: 'vuex',
   user_name: '一坨小灰灰',
   nav_list: [{id: 1, name: '列表'}, {id: 2, name: '列表'}],
