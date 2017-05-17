@@ -14,7 +14,7 @@
 			<div class="collapse navbar-collapse navbar-ex1-collapse">
 				<ul class="nav navbar-nav">
 					<li v-for="(item, key) in $store.state.nav_list">
-						<router-link to="key">{{ item.name }} {{ key + 1 }}</router-link>
+						<router-link :to="''+item.url">{{ item.name }} {{ key + 1 }}</router-link>
 					</li>
 				</ul>
 
