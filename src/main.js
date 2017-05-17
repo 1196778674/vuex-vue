@@ -9,6 +9,9 @@ import router from './router'
 require('!style-loader!css-loader!less-loader!./assets/bootstrap/css/bootstrap.css')
 require('!style-loader!css-loader!less-loader!./assets/css/index.less')
 
+window.$ = window.jQuery = require('jquery')
+window.bootstrap = require('bootstrap')
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
