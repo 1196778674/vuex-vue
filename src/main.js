@@ -6,6 +6,9 @@ import App from './App'
 import store from './store'
 import router from './router'
 
+require('!style-loader!css-loader!less-loader!./assets/bootstrap/css/bootstrap.css')
+require('!style-loader!css-loader!less-loader!./assets/css/index.less')
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
