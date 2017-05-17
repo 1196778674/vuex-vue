@@ -8,7 +8,6 @@ import router from './router'
 
 // 引用样式
 // import './../node_modules/bootstrap/dist/css/bootstrap.min.css'
-// require('./assets/css/index.less')
 
 // 引用第三方类库
 window.$ = window.jQuery = require('jquery')

@@ -33,6 +33,10 @@
 	</nav>
 </template>
 
+<style type="less">
+	/* import '@/assets/css/index.less' */
+</style>
+
 <script>
 export default {
   name: 'header'
