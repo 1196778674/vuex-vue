@@ -6,13 +6,6 @@ import App from './App'
 import store from './store'
 import router from './router'
 
-// 引用样式
-// import './../node_modules/bootstrap/dist/css/bootstrap.min.css'
-
-// 引用第三方类库
-window.$ = window.jQuery = require('jquery')
-window.bootstrap = require('bootstrap')
-
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
